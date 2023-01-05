@@ -11,7 +11,7 @@ We want to have GAN inversion and manipulation on the device so I implemnt the S
 
 the training looking like this:
 
-!@[Demonstration of the training process](assets/mapper_training.png)
+![Demonstration of the training process](assets/mapper_training.png)
 
 when G is the MobileStyleNet and $E_I$ distlation of openclip to is a EffiectFormer and $E_T$ is openclip text encoder(dont need for the app).
 
