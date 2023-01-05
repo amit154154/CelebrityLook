@@ -2,7 +2,7 @@
 
 App that uses GAN inversion and MobileStyleNet to transform your face into that of a celebrity, spefic text, a image of a friend, on the edge.
 
-##Implemntation
+## Implemntation
 
 using MobileStyleNet that designed to be efficient and fast, making it well-suited for use on mobile devices that trained with distlation of StyleGan2.
 
@@ -15,7 +15,7 @@ the training looking like this:
 
 when G is the MobileStyleNet and $E_I$ distlation of openclip to is a EffiectFormer and $E_T$ is openclip text encoder(dont need for the app).
 
-##Experiments
+## Experiments
 
 
 ### GAN Inversion
@@ -23,7 +23,7 @@ when G is the MobileStyleNet and $E_I$ distlation of openclip to is a EffiectFor
 Gan inversion infrence is very simple:$G(f(E_I(X)))$ when f is the simple layers that are not frozen in the training.
 
 
-###Generate faces using text
+### Generate faces using text
 Becouse we use the clip image encoder to train the mapper, we can use the text encoder to create delta W+ from the mean image to image close to a given text.
 
 
