@@ -22,10 +22,36 @@ when G is the MobileStyleNet and $E_I$ distillation of openclip Large model to E
 
 GAN inversion inference is very simple:  $G(f(E_I(X)))$  when f is the simple layers that are not frozen in the training.
 
+examples: 
 
+<div style="display: flex;">
+	<img src="assets/inversion images/0.jpg" width="200" height="200"> 
+	<img src="assets/inversion images/0_inversion.jpg" width="200">
+</div>
+
+
+<div style="display: flex;">
+	<img src="assets/inversion images/2.jpg" width="200" height="200"> 
+	<img src="assets/inversion images/2_inversion.jpg" width="200">
+</div>
+
+this method can do gan inversion but it is not even close to the SOTA methods to do gan inversion, it is saves some elements from the input image but it is lose almost completely the identity of the face.
 ### Generate faces using text
 Because we use the clip image encoder to train the mapper, we can use the text encoder to create delta W+ from the mean image to image close to a given text.
 look in the training process image and the paper to see how exactly it works.
+
+texts used:
+1. blonde woman with sun glasses.
+2. very happy woman with black hair and glasses.
+3. man with a hat and nice beard.
+4. man with brown beard.
+
+<div style="display: flex;">
+	<img src="assets/generate images/blonde_woman_with_glasses.jpg" width="200" height="200"> 
+	<img src="assets/generate images/black_hair_woman.jpg" width="200">
+	<img src="assets/generate images/man with a hat and nice beard.jpg" width="200">
+	<img src="assets/generate images/man_with_brown_beard.jpg" width="200">
+</div>
 
 ### Image text manuipulation 
 
