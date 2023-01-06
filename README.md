@@ -37,7 +37,7 @@ examples:
 
 this method can do gan inversion but it is not even close to the SOTA methods to do gan inversion, it is saves some elements from the input image but it is lose almost completely the identity of the face.
 ### Generate faces using text
-Because x   we use the clip image encoder to train the mapper, we can use the text encoder to create delta W+ from the mean image to image close to a given text.
+Because we use the clip image encoder to train the mapper, we can use the text encoder to create delta W+ from the mean image to image close to a given text.
 look in the training process image and the paper to see how exactly it works.
 
 texts used:
@@ -110,10 +110,11 @@ to solve this problem I created new method to find the optimal C for specific W+
 ![Demonstration of the training process](assets/projection_layer_training.png)
 
 the training process looks complicated but simply put we use clip loss to train the projection layer to find optimal C for W+ latent and text encoding.
-
 clip loss:
 
 $L_c = mse(C,C_I(X,X'))$ 
+
+when X is a image 1024X1024 from ffhq andX' is the image out of the decoder from the optimal W+.
 
 when $C_I$ is function to find clip similarity between to images and C is hyper-parameter when I used for the training equal to 0.7, for the best results for balance between the similarity to the input image and similarity for the text input.
 
