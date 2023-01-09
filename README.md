@@ -119,7 +119,7 @@ when X is a image 1024X1024 from ffhq andX' is the image out of the decoder from
 
 when $C_I$ is function to find clip similarity between to images and C is hyper-parameter when I used for the training equal to 0.7, for the best results for balance between the similarity to the input image and similarity for the text input.
 
-##TBD:
+## TBD:
 
 1. upload the training code for  finding optimal C.
 2. implement the paper ["Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training"
