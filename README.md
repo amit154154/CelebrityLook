@@ -2,6 +2,7 @@
 
 App that uses GAN inversion and MobileStyleNet to transform your face into that of a celebrity, specific text, a image of a friend, on the edge.
 
+
 ## Implemntation
 
 using MobileStyleNet that designed to be efficient and fast, making it well-suited for use on mobile devices that trained with distillation of StyleGan2.
@@ -118,6 +119,10 @@ when X is a image 1024X1024 from ffhq andX' is the image out of the decoder from
 
 when $C_I$ is function to find clip similarity between to images and C is hyper-parameter when I used for the training equal to 0.7, for the best results for balance between the similarity to the input image and similarity for the text input.
 
+##TBD:
 
+1. upload the training code for  finding optimal C.
+2. implement the paper ["Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training"
+](https://arxiv.org/abs/2301.02280) (2023), for the distiil clip image encoder and distl it again, train again the mapper. 
 
 
