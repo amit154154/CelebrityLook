@@ -123,6 +123,7 @@ when $C_I$ is function to find clip similarity between to images and C is hyper-
 
 1. upload the training code for  finding optimal C.
 2. implement the paper ["Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training"
-](https://arxiv.org/abs/2301.02280) (2023), for the distiil clip image encoder and distl it again, train again the mapper. 
+](https://arxiv.org/abs/2301.02280) (2023) or maybe ["TinyMIM: An Empirical Study of Distilling MIM Pre-trained Models"
+](https://arxiv.org/abs/2301.01296) (2023), for the distiil clip image encoder and distl it again, train again the mapper. 
 
 
